@@ -1,0 +1,8 @@
+<?html>
+
+
+    if(isset($_post['register']))
+    {
+        $user_exists_query="SELECT * FROM `registered_users` WHERE `username`-`$_post[fullname]` OR `email`-`$_post[email]`"
+    }
+?>    
